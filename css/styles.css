@@ -3,7 +3,7 @@
 
 :root {
 
-    /PALETTE/
+    /*PALETTE*/
 
     --primary-solid: #FF3333;
     --primary-900:rgba(255,51,51,0.9);
@@ -24,11 +24,11 @@
     --light-bg-solid:#FAFAFF;
     --light-font-solid:#FFFFFF;
 
-    /Typography/
+    /*Typography*/
     --base-font:"Inter",sans-serif;
     --alternative-font:"Raleway",sans-serif;
 
-    /Font-sizes/
+    /*Font-sizes*/
     --font-display:4.6em; /* en relacion al font-size de su contenedor*/
     --font-jumbo:3.8em;
     --font-xlarge:3em;
@@ -37,7 +37,7 @@
     --font-small:1.6em;
     --font-xsmall:1.2em;
 
-    /Spacings(rellenos y margenes para distanciar elementos)*/
+    /*Spacings*(rellenos y margenes para distanciar elementos)*/
     --spacing-128:12.8rem;
     --spacing-68:6.8rem;
     --spacing-36:3.6rem;
@@ -58,7 +58,7 @@
 
 html{
     font-family: var(--base-font);
-    font-size:62.5%; /10px/
+    font-size:62.5%; /*10px*/
     color: var(--dark-solid);
 }
 
@@ -93,7 +93,7 @@ img{
 
 }
 
-/HEADER/
+/*HEADER*/
 
 header{
     background-color:var(--dark-bg-solid);
@@ -163,7 +163,7 @@ header{
     background-color:var(--primary-900);
 }
 
-/HERO/
+/*HERO*/
 
 .hero{
     background-image: url("../img/funkos-banner.webp");
@@ -221,7 +221,7 @@ header{
     color: var(--light-font-solid);
 }
 
-/COLLECTIONS/
+/*COLLECTIONS*/
 
 .collection{
     display: grid;
@@ -274,7 +274,7 @@ header{
     background-color: var(--primary-900);
 }
 
-/SLIDER/
+/*SLIDER*/
 
 .slider{
     display: flex;
@@ -308,12 +308,12 @@ header{
     display: none;
 }
 
-.card-item_cover:hover .card-item_img--back{
+.card-item__cover:hover .card-item__img--back{
     display: block;
 
 }
 
-.card-item_cover:hover .card-item_img--front{
+.card-item__cover:hover .card-item__img--front{
     display: none;
 
 }
@@ -383,7 +383,7 @@ header{
     padding: 0 1vw;
 }
 
-/ANIMATIONS/
+/*ANIMATIONS*/
 @keyframes fade {
     0%{
         opacity: 0;
@@ -393,7 +393,7 @@ header{
     }
 }
 
-/FOOTER/
+/*FOOTER*/
 .footer{
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-68);
@@ -405,7 +405,7 @@ header{
     margin-top: var(--spacing-36);
 }
 
-/SHOP/
+/*SHOP*/
 
 #shop-main{
     display: flex;
@@ -443,7 +443,7 @@ header{
 
 
 
-/ADMIN/
+/*ADMIN*/
 
 .filter-content {
     padding:var(--spacing-20);
@@ -496,7 +496,7 @@ header{
 
 
 
-/MEDIAS QUERIES/
+/*MEDIAS QUERIES*/
 
 @media screen and (max-width: 768px){
     .navbar__menu{
@@ -529,8 +529,8 @@ header{
         font-size:10px;
     }
     .footer .navbar__logo{
-        width: 10vw;
-    }
+        width: 10vw;
+    }
 
 
 }
