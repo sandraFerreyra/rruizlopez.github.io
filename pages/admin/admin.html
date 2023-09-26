@@ -3,91 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Funkoshop</title>
-    <link rel="stylesheet" href="../../css/styles.css">
+    <title>CREATE | Funkoshop</title>
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@300&display=swap" rel="stylesheet">
 
+
 </head>
-<body>
+
+<body> 
     <header><!--Inicio Header-->
         <nav class="navbar container">
             <picture class="navbar__logo">
-                <a href="../../index.html">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+                <a href="../index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
             <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="../shop/shop.html">VER TIENDA</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./shop/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/admin.html">ADMIN</a>
+                    <a class="navbar__link" href="./admin.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="#">SALIR</a>
+                    <a class="navbar__link" href="../index.html">SALIR</a>
                 </li>
             </ul>
         </nav>
     </header><!--Fin Header-->
-    <main>
-        <section class="container">
-            <div class="filter-content">
-                <img class="filter-content__icon" src="../../img/icons/search_icon.svg" alt="icono de lupa">
-                <input class="filter-content__input" type="text" placeholder="código,nombre o categoría">    
-            </div>
-        </section>
-        <section>
-            <div class="table-titles container">
-                <h1 class="table-titles__principal">LISTADO DE PRODUCTOS</h1>
-                <div class="table-options">
-                    <h3 class="table-options__add">AGREGAR</h3>
-                    <iconify-icon class="table-options__plus" icon="charm:plus"></iconify-icon>
-                </div>
-            </div>
-            <table>
-                <th>
-                    <td></td>
-                </th>
-            
 
 
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="./shop/shop.html">SHOP</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./register.html">REGISTRARSE</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./login.html">LOGIN</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./contact.html">CONTACTO</a></li>
+            </ul>
+            <picture class="navbar__logo">
+                <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
 
 
-
-
-
-
-            </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
-       
-
-
-
-
-
-
-
-    </main>
-
-    <!--Iconos-->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
-</html>
