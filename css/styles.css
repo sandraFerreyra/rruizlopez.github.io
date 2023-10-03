@@ -299,7 +299,7 @@ header{
     
 }
 
-.card-item__cover img{
+.card-item__cover .card-item__img--front{
     animation: fade .7s;
     
 }
@@ -439,8 +439,33 @@ header{
 
 .filter-price{
     display: flex;
+    align-items: center;
+    gap: var(--spacing-12);
 }
 
+span{
+    font-weight: 800;
+}
+
+span, label {
+    font-size: var(--font-xsmall);
+    font-family:var(--base-font);
+}
+
+/*PAGINACION*/
+
+button {
+    cursor: pointer;
+    padding: var(--spacing-12);
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-16);
+    
+}
 
 
 /*ADMIN*/
@@ -531,6 +556,17 @@ header{
     .footer .navbar__logo{
         width: 10vw;
     }
+    #shop-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #shop-productos{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin-top: var(--spacing-24);
+    }
+
 
 
 }
