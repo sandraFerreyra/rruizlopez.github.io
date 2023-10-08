@@ -533,17 +533,24 @@ button {
     }
 
     .slider__items{
-        flex-wrap: wrap;
+        display:grid;
+        grid-template-columns: repeat(3, 30%);
     }
 
-    .slider__items{
-        display: flex;
-        justify-content:start;
-        align-items: center;
+    .card-item__name{
+        font-size: var(--font-small);
+        font-weight: 700;
     }
 
     .card-item__cover img{
-        width: 50vw;
+        width: 30vw;
+    }
+
+    .card-item__tag{
+        padding: var(--spacing-8);
+        position: absolute;
+        right: -20px;
+
     }
 
     .footer{
