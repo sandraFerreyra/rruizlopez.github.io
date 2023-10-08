@@ -163,6 +163,13 @@ header{
     background-color:var(--primary-900);
 }
 
+
+/*Menu mobile*/
+
+aside{
+    display:none;
+}
+
 /*HERO*/
 
 .hero{
@@ -531,6 +538,71 @@ button {
     .icon-bar{
         display: block;
     }
+
+    /*menu mobile*/
+
+    .aside-menu{
+        display:block;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index:9;
+        background-color: var(--dark-bg-solid);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        height: 100vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-16);
+        transform: translateX(-100%); /*se traslada a la izquierda el 100% de su ancho*/
+        opacity: 0; 
+        visibility: hidden; 
+        transition: .2s;
+    }
+
+    .aside-visible{
+        transform: translateX(0); /*para que vuelva a su estado original*/
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .open-menu, .close-menu{
+        border: 0;
+        background-color:transparent;
+        color: var(--light-font-solid);
+        font-size:var(--font-large);
+        cursor: pointer;
+    }
+
+    .close-menu{
+        display: block;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: var(--spacing-28);
+    }
+
+    .submenu{
+        display: none;
+        width:100px;
+        position: absolute;
+        left:70px;
+        top:10px;
+    }
+
+    .navbar__cart img{
+        width: 10vw;
+    }
+
+
+        
+    
 
     .slider__items{
         display:grid;
