@@ -48,7 +48,40 @@
                     </a>
                 </li>
             </ul>
-            <iconify-icon class="icon-bar" icon="fe:bar"></iconify-icon>
+            <iconify-icon class="icon-bar open-menu " icon="fe:bar" id="open-menu"></iconify-icon>
+            <!--menu mobile-->
+            <aside class="aside-menu">
+                <button class="close-menu" id="close-menu">
+                    <iconify-icon icon="material-symbols:close"></iconify-icon>
+                </button>
+                <nav>
+                    <ul class="menu">
+                        <li class="navbar__item with-submenu">
+                            <a  class="navbar__link with-icon" href="./pages/shop/shop.html">SHOP <iconify-icon icon="mdi:chevron-right"></iconify-icon></a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="" class="submenu__link">Funkos</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="" class="submenu__link">Remeras</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="" class="submenu__link">Llaveros</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="./pages/admin/contact.html">CONTACTO</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a  class="navbar__link"href="./pages/admin/login.html">LOGIN</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__cart" href="./pages/shop/carrito.html"><img src="./img/icons/cart-icon.svg" alt="icono de carrito"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
         </nav>
     </header><!--Fin Header-->
     <section class="hero">
@@ -166,5 +199,7 @@
     
     <!--Iconos-->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    <script src="./js/menu-mobile.js"></script>
 </body>
 </html>
